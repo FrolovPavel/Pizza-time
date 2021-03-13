@@ -1,0 +1,158 @@
+//button
+
+.btn {
+  background-color: #ff5441;
+  border: none;
+  color: #FFFF;
+  padding: 18px 20px;
+  width: 240px;
+  max-width: 100%;
+  border-radius: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 0px 38px 0px rgba(212, 66, 50, 0.8);
+  outline: none;
+  transition: all .2s linear ;
+
+  &:hover {
+    background-color: #ef4936;
+  }
+
+  &:active {
+    opacity: .9;
+    transform: scale(.95);
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 16px 20px;
+    width: 220px;
+    font-size: 16px;
+  }
+}
+
+
+//container
+
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  .section-top__title {
+    font-size: 34px;
+  }
+}
+
+//btn-menu
+
+.btn-menu {
+  background: none;
+  outline: none;
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px;
+
+  &__box {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+
+
+}
+
+.btn-menu__inner {
+  position: relative;
+  background: #FFFFFF;
+  height: 4px;
+  width: 100%;
+  display: block;
+  top: 50%;
+  border-radius: 5px;
+
+  &:before, &:after {
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #FFFFFF;
+  }
+
+  &:before {
+    top: -10px;
+  }
+
+  &:after {
+    top: 10px;
+  }
+}
+
+//section-catalog
+
+.section {
+  padding: 110px 0;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 90px 0;
+  }
+}
+
+.section__title {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+
+  &--accent {
+    color: #ffa650;
+  }
+}
+
+@media (max-width: 576px) {
+  .section__title {
+    font-size: 36px;
+  }
+}
+
+.catalog-nav {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 23px;
+    overflow: hidden;
+  }
+
+  &__btn {
+    padding: 15px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+
+
+}
+
