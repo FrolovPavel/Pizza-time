@@ -72,7 +72,7 @@
 <section class="section section-catalog">
     <div class="container">
         <header class="section__header">
-            <h2 class="section__title section__title--accent">Меню</h2>
+            <h2 class="page-title page-title--accent">Меню</h2>
             <nav class="catalog-nav">
                 <ul class="catalog-nav__wrapper">
                     <li class="catalog-nav__item">
@@ -347,7 +347,7 @@
     <img src="img/section-about/bg1.jpg" alt="" class="section-about__img">
     <div class="container section-about__container">
         <div class="section-about__content">
-            <h2 class="section__title section-about__title">О нас</h2>
+            <h2 class="page-title section-about__title">О нас</h2>
             <p class="section-about__text">
                 Доставим вам горячую пиццу менее чем за час или пицца бесплатно.
                 Мы готовим пиццу только из свежих продуктов.
@@ -362,7 +362,7 @@
 <section class="section section-contacts">
     <div class="container section-contacts__container">
         <header class="section__header">
-            <h2 class="section__title section-contacts__title">Контакты</h2>
+            <h2 class="page-title section-contacts__title">Контакты</h2>
         </header>
         <div class="contacts">
             <div class="contacts__start">
@@ -430,7 +430,7 @@
 <!--/fоoter-->
 
 <!--popup-menu-->
-<div class="popup">
+<div class="popup popup-menu">
     <div class="popup__wrapper">
         <div class="popup__inner">
             <div class="popup__content popup__content--fluid popup__content--center">
@@ -488,6 +488,73 @@
         </div>
     </div>
 </div>
-<!--popup-menu-->
+<!--/popup-menu-->
+
+
+<!--popup-order-->
+<div class="popup popup-order">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content ">
+                <button class="btn-close popup__btn-close"></button>
+                <h2 class="page-title popup__title">Заполните форму</h2>
+                <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пицу за 50 минут</p>
+                <div class="order">
+                    <img class="order__img" src="./img/section-catalog/1.png" alt="">
+                    <h3 class="order__title">
+                        <span>Салями</span>
+                        <span>850</span> &#8381;
+                    </h3>
+                    <p class="order__size">35 см</p>
+                    <form action="" class="form">
+                        <input type="hidden" name="пицца">
+                        <input type="hidden" name="цена">
+                        <input type="hidden" name="размер">
+                        <input class="form__input" type="text" name="имя" placeholder="Имя" required>
+                        <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
+                        <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
+                        <select class="form__input" name="оплата" id="">
+                            <option value="Оплата наличными">Оплата наличными</option>
+                            <option value="Оплата картой">Оплата картой</option>
+                        </select>
+                        <button class="form__btn btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/popup-order-->
+
+<!--popup-order-->
+<div class="popup popup-order">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content ">
+                <button class="btn-close popup__btn-close"></button>
+                <h2 class="page-title popup__title">Успешно отправлено</h2>
+                <p class="popup__subtitle">Мы уже начали готовить вашу пиццу</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/popup-order-->
+
+<!--popup-error-->
+<div class="popup popup-order is-active">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+            <div class="popup__content ">
+                <button class="btn-close popup__btn-close"></button>
+                <h2 class="page-title popup__title">Произошла ошибка</h2>
+                <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="79999999999">+7 (999) 999-99-99</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/popup-error-->
+
+
 </body>
 </html>
