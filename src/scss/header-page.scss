@@ -1,7 +1,7 @@
 //header
 
 .header-page {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,11 +73,21 @@
 
 }
 
-
+.logo__img {
+  transition: all .2s;
+  &:hover {
+    opacity: .8;
+  }
+}
 
 .header-page__hamburger {
   display: none;
   margin-right: -15px;
+}
+
+.header-page.is-active .header-page__link {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 1200px) {

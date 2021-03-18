@@ -1,4 +1,5 @@
 import '../scss/section-top main.scss'
-
-
-const a = 5
+import './header'
+import './popup'
+import './scrollTo'
+import './myLib'
