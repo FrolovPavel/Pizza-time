@@ -3,15 +3,13 @@
     let body = document.querySelector("body");
 
 
-    let showPopup = (target) => {
+    let showPopup = (target) => {//функция открывает popup (часть листенера)
         target.classList.add('is-active')
         document.body.style.overflow="hidden"
     }
 
-    let closePopup = (target) => {
-
-        setTimeout(() => {target.classList.remove('is-active')}, 200)
-
+    let closePopup = (target) => { //функция закрывает popup (часть листенера)
+        target.classList.remove('is-active')
         document.body.style.overflow="visible"
     }
 
@@ -32,7 +30,7 @@
         }
     })
 
-    body.addEventListener('click', (e) => { //закрывает popup на click
+    body.addEventListener('click', (e) => { //закрывает popup на click по крестику и за popup
         let target = e.target
 
         if(target.classList.contains('popup-close') ||

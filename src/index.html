@@ -76,23 +76,23 @@
             <nav class="catalog-nav">
                 <ul class="catalog-nav__wrapper">
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn is-active" type="button">все</button>
+                        <button class="catalog-nav__btn is-active" type="button" data-filter="all">все</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn" type="button">грибные</button>
+                        <button class="catalog-nav__btn" type="button" data-filter="mushrooms">грибные</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn" type="button">мясные</button>
+                        <button class="catalog-nav__btn" type="button" data-filter="meat">мясные</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn" type="button">сырные</button>
+                        <button class="catalog-nav__btn" type="button" data-filter="cheese">сырные</button>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <div class="catalog">
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/1.png" alt="" class="product__img">
                     <div class="product__content">
@@ -111,7 +111,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">850</span>
+                                <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -120,7 +120,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/4.png" alt="" class="product__img">
                     <div class="product__content">
@@ -139,7 +139,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">950</span>
+                                <span class="product__price-value">950</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -148,7 +148,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="mushrooms">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/6.png" alt="" class="product__img">
                     <div class="product__content">
@@ -167,7 +167,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">880</span>
+                                <span class="product__price-value">880</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -176,7 +176,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/4.png" alt="" class="product__img">
                     <div class="product__content">
@@ -194,7 +194,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">1250</span>
+                                <span class="product__price-value">1250</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -203,7 +203,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/9.png" alt="" class="product__img">
                     <div class="product__content">
@@ -220,7 +220,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">890</span>
+                                <span class="product__price-value">890</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -229,7 +229,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="mushrooms">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/8.png" alt="" class="product__img">
                     <div class="product__content">
@@ -247,7 +247,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">850</span>
+                                <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -256,7 +256,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/9.png" alt="" class="product__img">
                     <div class="product__content">
@@ -275,7 +275,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">920</span>
+                                <span class="product__price-value">920</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -283,7 +283,7 @@
                     </footer>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="cheese">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/1.png" alt="" class="product__img">
                     <div class="product__content">
@@ -300,7 +300,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">990</span>
+                                <span class="product__price-value">990</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -309,7 +309,7 @@
                 </div>
 
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category="meat">
                 <div class="product  catalog__product">
                     <img src="./img/section-catalog/4.png" alt="" class="product__img">
                     <div class="product__content">
@@ -328,7 +328,7 @@
                         </div>
                         <div class="product__bottom">
                             <div class="product__price">
-                                <span class="product_price-value">950</span>
+                                <span class="product__price-value">950</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
                             <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
@@ -366,12 +366,12 @@
         </header>
         <div class="contacts">
             <div class="contacts__start">
-                <div class="contacts__map"></div>
+                <div class="contacts__map" id="ymap"></div>
             </div>
             <div class="contacts__end">
                 <div class="contacts__item">
                     <h3 class="contacts__title">Адрес</h3>
-                    <p class="contacts__text">г. Москва, Преображенская площадь, 8</p>
+                    <p class="contacts__text">г. Волгоград, набережная 62-й Армии, 1</p>
                 </div>
                 <div class="contacts__item">
                     <h3 class="contacts__title">Телефон</h3>
@@ -502,14 +502,14 @@
                 <div class="order">
                     <img class="order__img" src="./img/section-catalog/1.png" alt="">
                     <h3 class="order__title">
-                        <span>Салями</span>
-                        <span>850</span> &#8381;
+                        <span class="order-product-title" >Салями</span>
+                        <span class="order-product-price" >850</span> &#8381;
                     </h3>
                     <p class="order__size">35 см</p>
                     <form action="" class="form">
-                        <input type="hidden" name="пицца">
-                        <input type="hidden" name="цена">
-                        <input type="hidden" name="размер">
+                        <input class="order-info-title" type="hidden" name="пицца">
+                        <input class="order-info-price" type="hidden" name="цена">
+                        <input class="order-info-size" type="hidden" name="размер">
                         <input class="form__input" type="text" name="имя" placeholder="Имя" required>
                         <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
                         <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
@@ -527,8 +527,8 @@
 </div>
 <!--/popup-order-->
 
-<!--popup-order-->
-<div class="popup popup-order">
+<!--popup-thanks-->
+<div class="popup popup-thanks">
     <div class="popup__wrapper">
         <div class="popup__inner">
             <div class="popup__content ">
@@ -539,12 +539,12 @@
         </div>
     </div>
 </div>
-<!--/popup-order-->
+<!--/popup-thanks-->
 
 <!--popup-error-->
-<div class="popup popup-order">
+<div class="popup popup-error">
     <div class="popup__wrapper">
-        <div class="popup__inner">
+        <div class="popup__inner ">
             <div class="popup__content ">
                 <button class="btn-close popup__btn-close popup-close"></button>
                 <h2 class="page-title popup__title">Произошла ошибка</h2>
@@ -555,6 +555,6 @@
 </div>
 <!--/popup-error-->
 
-
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>

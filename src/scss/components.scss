@@ -355,6 +355,7 @@
     border-radius: 21px;
     overflow: hidden;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+
   }
 
   &__size {
@@ -368,10 +369,16 @@
     font-weight: 900;
     padding: 13px 33px;
     border-radius: 21px;
+    outline: none;
+    transition: all .2s;
 
     &.is-active {
       color: #a2a2a2;
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &:hover {
+      color: #a2a2a2;
     }
   }
 
@@ -591,6 +598,7 @@
     &:focus {
       border-color: #ffa650;
     }
+
   }
 
   &__btn {

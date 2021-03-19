@@ -8,10 +8,9 @@
         let headerOffset = document.querySelector('.header-page').clientHeight
         let targetOffsetTop = targetTop + scrollTop - headerOffset
 
-
         window.scrollTo({
             top: targetOffsetTop,
-            behavior: "auto"
+            behavior: window.matchMedia('(max-width: 992px)').matches ? "auto" : "smooth"
         });
 
     }
@@ -28,3 +27,4 @@
         }
     })
 })();
+//скролит сайт при нажатии на кнопки навигации
