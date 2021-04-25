@@ -1,1 +1,1 @@
-Результат можно увидеть тут: https://frolovpavel.github.io/Pizza-time/
+View the result: https://frolovpavel.github.io/Pizza-time/
